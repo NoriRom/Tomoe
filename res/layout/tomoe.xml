@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tomoe.Tomoe" >
+
+    <ImageView
+        android:id="@+id/imageStatus"
+        android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+   android:maxHeight="160dp"
+    android:scaleType="fitCenter"  
+        android:layout_gravity="center"
+        android:src="@drawable/eteint" />
+
+    <TextView
+        android:id="@+id/DetectStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Satus: Stopped"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/Launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Launch Detect" />
+
+        <Button
+            android:id="@+id/Stopper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stop Detect" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:gravity="center" />
+
+    <CheckBox
+        android:id="@+id/checktv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="TV" />
+
+    <CheckBox
+        android:id="@+id/checkmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="mail" />
+
+    <CheckBox
+        android:id="@+id/checkvideo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="video" />
+
+    <CheckBox
+        android:id="@+id/checkSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="SMS" />
+
+    <Button
+        android:id="@+id/SaveOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Save Option" />
+
+    <TextView
+        android:id="@+id/TextSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Not saved yet"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+</LinearLayout>
